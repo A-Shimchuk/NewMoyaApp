@@ -77,7 +77,7 @@ extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if let dataResults = viewModel?.data.pokemonsList.value?.results {
-            let name = dataResults[indexPath.row].name.uppercased()
+            let name = dataResults[indexPath.row].name.lowercased()
             coordinator?.showDetailScreen(withPokemonName: name)
         }
    

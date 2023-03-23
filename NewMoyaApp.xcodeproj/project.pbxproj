@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		192EC79F6F81858D4EE962F5 /* Pods_NewMoyaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E866C240BDF7BB610E3513 /* Pods_NewMoyaApp.framework */; };
 		CE2B81E629B1EF1B00D4F8B0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B81E529B1EF1B00D4F8B0 /* MainTableViewCell.swift */; };
 		CE2B81E929B334D500D4F8B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B81E829B334D500D4F8B0 /* Constants.swift */; };
 		CE2B81ED29B3434900D4F8B0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B81EC29B3434900D4F8B0 /* Coordinator.swift */; };
@@ -28,8 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58E866C240BDF7BB610E3513 /* Pods_NewMoyaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewMoyaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CDE9638A6E6CEBC3D07DF41 /* Pods-NewMoyaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMoyaApp.debug.xcconfig"; path = "Target Support Files/Pods-NewMoyaApp/Pods-NewMoyaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2B81E529B1EF1B00D4F8B0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		CE2B81E829B334D500D4F8B0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE2B81EC29B3434900D4F8B0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -49,7 +46,6 @@
 		CEAECB272997330800AF48E3 /* SpecificPokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificPokemonModel.swift; sourceTree = "<group>"; };
 		CEE141B229C61D4000BA1CEE /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		CEE141B629C719C900BA1CEE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		D97C7B96DE9AE68CCB509D79 /* Pods-NewMoyaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMoyaApp.release.xcconfig"; path = "Target Support Files/Pods-NewMoyaApp/Pods-NewMoyaApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				192EC79F6F81858D4EE962F5 /* Pods_NewMoyaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,18 +62,8 @@
 		6460794D7E20CDE1B8412E59 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6CDE9638A6E6CEBC3D07DF41 /* Pods-NewMoyaApp.debug.xcconfig */,
-				D97C7B96DE9AE68CCB509D79 /* Pods-NewMoyaApp.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		835451A6BDCB54D0225C462C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				58E866C240BDF7BB610E3513 /* Pods_NewMoyaApp.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CE2B81E429B1EEE900D4F8B0 /* Cell */ = {
@@ -130,7 +115,6 @@
 				CEAECB032995324A00AF48E3 /* NewMoyaApp */,
 				CEAECB022995324A00AF48E3 /* Products */,
 				6460794D7E20CDE1B8412E59 /* Pods */,
-				835451A6BDCB54D0225C462C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,11 +203,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEAECB152995324C00AF48E3 /* Build configuration list for PBXNativeTarget "NewMoyaApp" */;
 			buildPhases = (
-				22E6B26130EF730532DB562F /* [CP] Check Pods Manifest.lock */,
 				CEAECAFD2995324A00AF48E3 /* Sources */,
 				CEAECAFE2995324A00AF48E3 /* Frameworks */,
 				CEAECAFF2995324A00AF48E3 /* Resources */,
-				9A7B9D41F01E1D196C3C76D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,48 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		22E6B26130EF730532DB562F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NewMoyaApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A7B9D41F01E1D196C3C76D0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewMoyaApp/Pods-NewMoyaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewMoyaApp/Pods-NewMoyaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewMoyaApp/Pods-NewMoyaApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEAECAFD2995324A00AF48E3 /* Sources */ = {
@@ -476,7 +416,6 @@
 		};
 		CEAECB162995324C00AF48E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CDE9638A6E6CEBC3D07DF41 /* Pods-NewMoyaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,7 +447,6 @@
 		};
 		CEAECB172995324C00AF48E3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D97C7B96DE9AE68CCB509D79 /* Pods-NewMoyaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
