@@ -17,7 +17,6 @@ extension DetailViewController {
 
 class DetailViewController: UIViewController {
     // MARK: Публичные свойства
-    var coordinator: AppCoordinator?
     var viewModel: DetailViewModel?
     
     // MARK: Приватные свойства

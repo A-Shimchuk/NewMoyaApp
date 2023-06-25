@@ -22,15 +22,16 @@ class AppCoordinator: Coordinator {
     func showMainScreen() {
         let vc = MainViewController()
         let viewModel = MainViewModel()
-        vc.coordinator = self
         vc.viewModel = viewModel
+        vc.viewModel?.toDetailScreen = { name in
+            self.showDetailScreen(withPokemonName: name)
+        }
         navigationController.pushViewController(vc, animated: false)
     }
     /// Переход на экран детальной информации
     func showDetailScreen(withPokemonName name: String) {
         let vc = DetailViewController()
         let viewModel = DetailViewModel(pokemonName: name)
-        vc.coordinator = self
         vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: true)
     }

@@ -10,7 +10,6 @@ import Bond
 
 class MainViewController: UIViewController {
     // MARK: Публичные свойства
-    var coordinator: AppCoordinator?
     var viewModel: MainViewModel?
     
     // MARK: Приватные свойства
@@ -78,7 +77,7 @@ extension MainViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         if let dataResults = viewModel?.data.pokemonsList.value?.results {
             let name = dataResults[indexPath.row].name.lowercased()
-            coordinator?.showDetailScreen(withPokemonName: name)
+            viewModel?.toDetailScreen?(name)
         }
    
     }

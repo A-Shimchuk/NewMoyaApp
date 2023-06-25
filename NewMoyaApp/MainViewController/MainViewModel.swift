@@ -22,6 +22,8 @@ protocol MainViewModelProtocol {
 class MainViewModel: MainViewModelProtocol {
     /// Ссылка на класс с данными
     var data = MainViewModelData()
+    /// Колбэк для перехода на деталку
+    var toDetailScreen: ((String) -> Void)?
     /// Работа с NetworkLayer
     private let networkLayer = NetworkLayer()
     /// Обработчик viewDidLoad
